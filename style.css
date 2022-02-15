@@ -3,6 +3,29 @@
     margin: 0;
 }
 
+body {
+    background-color: gray;
+}
+
+header {
+    /* background-color: gray; */
+    padding: 2rem;
+}
+
+.container {
+    /* background-color: red; */
+    width: 50rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    /* height: 100vh; */
+    border: 0.1rem solid rgb(53, 53, 53);
+    border-radius: 1rem;
+}
+
+.dataIn {
+    padding: 2rem 0;
+}
+
 #addEntry {
     padding: 0.5rem 1rem;
     background-color: rgba(0, 18, 184, 0.333);
@@ -20,4 +43,9 @@
     border: 0.1rem solid black;
     border-radius: 0.5rem;
     padding: 0.35rem;
+}
+
+#inputField:hover {
+    border: 0.1rem solid rgb(214, 81, 81);
+    cursor: pointer;
 }
