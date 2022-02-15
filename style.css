@@ -13,7 +13,7 @@ header {
 }
 
 .container {
-    /* background-color: red; */
+    background-color: red;
     width: 50rem;
     margin: 2rem auto;
     padding: 2rem;
@@ -48,4 +48,28 @@ header {
 #inputField:hover {
     border: 0.1rem solid rgb(214, 81, 81);
     cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .container {
+        background-color: red;
+        width: 35rem;
+        margin: 2rem auto;
+        padding: 2rem;
+        /* height: 100vh; */
+        border: 0.1rem solid rgb(53, 53, 53);
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        background-color: red;
+        width: 15.5rem;
+        margin: 2rem auto;
+        padding: 2rem;
+        /* height: 100vh; */
+        border: 0.1rem solid rgb(53, 53, 53);
+        border-radius: 1rem;
+    }
 }

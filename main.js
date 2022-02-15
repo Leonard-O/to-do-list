@@ -81,4 +81,11 @@ addEnt.addEventListener('click', () => {
     });
 });
 
+// const mediaQuery = window.matchMedia('(min-width: 768px)');
+// if (mediaQuery.matches) {
+//     alert('Media Query Matched!');
+// }
+
+// mediaQuery();
+
 // Enter key
