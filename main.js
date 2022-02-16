@@ -2,8 +2,9 @@ const body = document.querySelector('body');
 const h1 = document.querySelector('h1');
 const addEnt = document.querySelector('#addEntry');
 const container = document.querySelector('.container');
+let inputField = document.querySelector('#inputField');
 
-h1.style.color = '#fff';
+h1.style.color = '#bdc3c7';
 
 // addEnt.addEventListener('keyup', (e) => {
 //     e.preventDefault();
@@ -12,14 +13,13 @@ h1.style.color = '#fff';
 //     }
 // });
 
+// if (inputField.value.length == 0) addEnt.disabled = true;
+// else addEnt.disabled = false;
+
 addEnt.addEventListener('click', () => {
     fn1 = () => {
-        let inputField = document.querySelector('#inputField').value;
+        inputField.value;
     };
-
-    if (inputField.value === '') {
-        addEnt.removeEventListener;
-    }
 
     // create new div with id of entries
     const entries = document.createElement('div');
@@ -29,6 +29,7 @@ addEnt.addEventListener('click', () => {
     const leftDiv = document.createElement('div');
     leftDiv.setAttribute('id', 'leftDiv');
 
+    // create  paragraph
     const p = document.createElement('p');
     p.innerText = inputField.value;
     leftDiv.append(p);
@@ -57,8 +58,6 @@ addEnt.addEventListener('click', () => {
 
     rightDiv.append(btn1, btn2);
 
-    // rightDiv.innerHTML('Iam the right div');
-
     entries.append(leftDiv, rightDiv);
 
     inputField.value = '';
@@ -67,7 +66,7 @@ addEnt.addEventListener('click', () => {
     entries.style.display = 'flex';
     entries.style.padding = '0.2rem';
     entries.style.justifyContent = 'space-between';
-    entries.style.borderBottom = '0.1rem solid black';
+    entries.style.borderBottom = '0.1rem solid #fff';
 
     container.append(entries);
 
@@ -80,12 +79,3 @@ addEnt.addEventListener('click', () => {
         container.removeChild(entries);
     });
 });
-
-// const mediaQuery = window.matchMedia('(min-width: 768px)');
-// if (mediaQuery.matches) {
-//     alert('Media Query Matched!');
-// }
-
-// mediaQuery();
-
-// Enter key
