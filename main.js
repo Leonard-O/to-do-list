@@ -32,6 +32,7 @@ addEnt.addEventListener('click', () => {
     // create  paragraph
     const p = document.createElement('p');
     p.innerText = inputField.value;
+    p.style.color = '#fff';
     leftDiv.append(p);
 
     // create new div with id of rightDiv
@@ -66,13 +67,13 @@ addEnt.addEventListener('click', () => {
     entries.style.display = 'flex';
     entries.style.padding = '0.2rem';
     entries.style.justifyContent = 'space-between';
-    entries.style.borderBottom = '0.1rem solid #fff';
+    entries.style.borderBottom = '0.1rem solid #636e72';
 
     container.append(entries);
 
     btn1.addEventListener('click', () => {
         p.style.textDecorationLine = 'line-through';
-        p.style.color = 'red';
+        p.style.color = 'rgb(214, 81, 81)';
     });
 
     btn2.addEventListener('click', () => {
